@@ -1,0 +1,182 @@
+/* Custom Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+.navbar {
+    background-color: #f8f9fa;
+  }
+  
+footer {
+    background-color: #343a40;
+    color: white;
+  }
+  
+.portfolio-card img {
+    transition: transform 0.5s ease;
+  }
+  
+.portfolio-card:hover img {
+    transform: scale(1.1);
+  }
+
+.monoton-regular {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding: 30px;
+}
+  
+.navbar-shrink {
+    background-color: #343a40 !important;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .service-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .portfolio-card p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .sintony-regular {
+    font-family: "Sintony", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sintony-bold {
+    font-family: "Sintony", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+  button {
+    padding: 7% 14px;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    margin: 0px;
+    transition: all 0.25s ease;
+  }
+  
+  
+  
+  .button-underline:hover::after {
+    width: 100%;
+  }
+  .button-underline::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    width: 10%;
+    height: 3%;
+    background: #000f52;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+  
+  .button-2:hover::after {
+    transform: translate(-5px, -5px);
+    border: 3px solid #000f52;
+  }
+  .button-2:hover::before {
+    transform: translate(5px, 5px);
+  }
+  .button-2::after, .button-2::before {
+    content: "";
+    border: 3px solid #000;
+    position: absolute;
+    border-radius: inherit;
+    width: calc(100%);
+    height: calc(100% - 10%);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+  }
+  
+  
+  
+  .button-3:hover::after {
+    transform: translate(-2px, -2px);
+    border: 3px solid #000f52;
+  }
+  .button-3:hover::before {
+    transform: translate(2px, 2px);
+  }
+  .button-3::after, .button-3::before {
+    content: "";
+    border: 3px solid #000f52;
+    position: absolute;
+    border-radius: inherit;
+    width: calc(100%);
+    height: calc(60%);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+  }
+  
+  
+  
+  .button-4:hover {
+    color: #ffffff;
+  }
+  .button-4:hover::after {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .button-4::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(.1);
+    background: #000;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.25s ease;
+  }
+  
